@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   background-color: #dbe9cb;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 300px auto 300px;
+   grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+  place-items: center;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  height: 100%;
+}
+
+footer {
+  grid-area: footer;
+}
+
+ul li {
+  padding: 1rem 0;
+}
